@@ -1,0 +1,27 @@
+.case-card-container {
+  /* border: 5px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.case-card {
+  /* border: 5px solid orange; */
+  border-radius: 10px;
+  padding: 5px 15px;
+  margin: 5px 15px;
+  min-height: 350px;
+  min-width: 350px;
+  background-color: rgb(0, 0, 255);
+  filter: drop-shadow(5px 5px 5px black);
+  color: rgb(255, 255, 255);
+}
+
+.case-card p {
+  font-size: 20px;
+}
+.case-card p span {
+  font-weight: bolder;
+  margin-right: 10px;
+}

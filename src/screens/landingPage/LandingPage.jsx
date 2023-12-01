@@ -5,19 +5,23 @@ import LoginPage from "../../components/LoginPage/LoginPage";
 import Signup from "../../components/SigupPage/Signup";
 import "./Landingpage.css";
 import style from "../../styles";
-const LandingPage = () => {
+import { classesGenrator } from "../../utils";
+const LandingPage = ({ width }) => {
   const [signUp, setSignUp] = useState(false);
   return (
-    <div className="landing-page-wrapper">
-      <div className="landing-page-container">
+    <div className="landing-page-wrapper ">
+      <div className={`landing-page-container `}>
         <motion.div
           // animate={{ scale: [1, 1.02, 1] }}
-          whileHover={{ scale: 1.02 }}
-          className="landing-page-left-panel"
+          whileHover={{ scale: 1.01 }}
+          className={`landing-page-left-panel flex-row-center ${classesGenrator(
+            width
+          )}`}
+          style={width <= 1000 ? { display: "none" } : {}}
         >
           <img src={lawyerdiary} alt="advocatesdiary" />
         </motion.div>
-        <div className="landing-page-right-panel">
+        <div className={`landing-page-right-panel ${classesGenrator(width)}`}>
           {signUp ? (
             <Signup setSignUp={setSignUp} />
           ) : (

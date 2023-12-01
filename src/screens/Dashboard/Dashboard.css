@@ -1,0 +1,114 @@
+.dashboard-container {
+  margin: 20px;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Calender-container {
+  /* border: 5px solid orange; */
+  /* width: 450px; */
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.calender-div {
+  padding: 10px;
+  filter: drop-shadow(5px 5px 5px black);
+  min-width: 400px;
+}
+.calender-side-panel {
+  padding: 0px 10px;
+}
+.calender-side-panel > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.react-calendar {
+  /* border: 5px solid orange; */
+  border-radius: 5px;
+  padding: 5px;
+  min-height: 400px;
+  max-width: 450px;
+  font-size: 16px;
+  background-color: white;
+}
+.react-calendar__tile {
+  /* margin: 2px 2px; */
+  height: 67px;
+  width: 50px;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 255);
+  color: white;
+  cursor: pointer;
+  /* border: none; */
+  border-color: white;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.react-calendar__tile--active {
+  background-color: rgb(255, 251, 0);
+  color: rgb(0, 0, 0);
+}
+.react-calendar__tile--now {
+  background-color: rgb(1, 199, 34);
+  color: white;
+}
+.react-calendar__navigation {
+  display: flex;
+}
+.react-calendar__navigation__arrow {
+  min-height: 40px;
+  min-width: 40px;
+  cursor: pointer;
+}
+.react-calendar__navigation__label {
+  min-height: 40px;
+  min-width: 190px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  justify-content: center;
+  align-items: center;
+}
+abbr[title] {
+  font-weight: bolder;
+  text-decoration: none;
+}
+.react-calendar__month-view__weekdays {
+  max-width: 450px;
+}
+.react-calendar__month-view__days {
+  max-width: 450px;
+}
+.cases-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cases-container > p {
+  margin: 30px 0px;
+  padding: 5px 15px;
+  font-size: 35px;
+  color: whitesmoke;
+  background-color: blue;
+  border-radius: 5px;
+}
+.case-summary-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.case-summary-container div {
+  margin: 0px 10px;
+}
+.case-summary-container div span {
+  margin: 10px;
+}

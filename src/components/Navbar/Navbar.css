@@ -1,0 +1,37 @@
+.navbar-container {
+  margin: 0px !important;
+  /* margin-bottom: 80px; */
+  /* border: 5px solid blue; */
+  background-color: blue;
+  width: 100%;
+  height: 60px;
+  /* border-radius: 5px; */
+  filter: drop-shadow(5px 5px 5px black);
+  color: white;
+  /* display: flex;
+  flex-direction: row;
+  align-items: center; */
+  font-size: 25px;
+  font-weight: bolder;
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+}
+.navbar-buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-buttons {
+  height: 40px;
+  width: 80px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(56, 56, 253);
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  filter: drop-shadow(2px 2px 2px black);
+}

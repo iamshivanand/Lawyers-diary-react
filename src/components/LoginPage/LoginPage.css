@@ -55,6 +55,8 @@
   font-weight: bolder;
   border-radius: 5px;
   cursor: pointer;
+  background-color: blue;
+  color: white;
   /* filter: drop-shadow(1px 1px 1px black); */
   filter: drop-shadow(5px 5px 5px black);
 }

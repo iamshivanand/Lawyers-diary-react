@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./LoginPage.css";
 import style from "../../styles";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 const LoginPage = ({ setSignUp }) => {
   const [showPassword, setShowPassword] = useState("password");
   return (
@@ -33,13 +34,19 @@ const LoginPage = ({ setSignUp }) => {
             {showPassword === "password" ? "Show" : "Hide"}
           </button>
         </div>
+
         <motion.button
           //   animate={{ scale: [1, 1.2, 1] }}
 
           whileHover={{ scale: 1.02 }}
           className="ldButton"
         >
-          Login
+          <Link
+            to="/dashboard"
+            style={{ color: "white", textDecoration: "none" }}
+          >
+            Login
+          </Link>
         </motion.button>
       </div>
       <div style={{ marginTop: 20 }}>
